@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+/* Reset styling */
+
+:root {
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  font-size: calc(1rem + 0.5dvw);
+}
 
 * {
   box-sizing: border-box;
@@ -17,49 +26,78 @@ a {
   color: inherit;
 }
 
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  flex-grow: 1;
+body {
+  margin: 0;
 }
 
-#main-logo {
+
+
+
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  align-items: center;
+  margin-inline: 3rem;
+}
+
+#page-logo {
+  display: flex;
+  align-items: center;
+}
+
+#branch-logo {
   display: flex;
   align-items: center;
 }
 
 #branch-name {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: var(--fw-bold);
 }
 
 #page-nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 #support-nav {
   display: flex;
   align-items: center;
   justify-content: right;
+  width: 100%;
 }
 
-#page-nav-list,
+#page-nav-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 #support-nav-list {
   display: flex;
   flex-direction: row;
+  flex: 1;
   align-items: center;
-  justify-content: space-between;
-}
-
-#page-nav-list li {
-  padding-inline: 0.5rem;
+  justify-content: right;
 }
 
 #support-nav-list li {
-  padding-inline-start: 0.5rem;
+  margin-inline-start: 1rem;
+}
+
+
+#page-nav-list li a,
+#support-nav-list li a {
+  font-weight: var(--fw-medium);
+  text-align: center;
+}
+
+#page-nav-list li a:hover,
+#support-nav-list li a:hover {
+  font-weight: var(--fw-bold);
 }
