@@ -1,0 +1,22 @@
+/* header, #header_nav {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  grid-auto-flow: column;
+} */
+
+/* #main-logo,
+#header-nav {
+  box-sizing: border-box;
+} */
+
+/* header, #header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-logo>*, #header-nav>*, #page-nav-list>li, #support-nav-list>li {
+  display: inline-block;
+} */
+

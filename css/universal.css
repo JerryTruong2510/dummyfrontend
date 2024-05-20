@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  flex-grow: 1;
+}
+
+#main-logo {
+  display: flex;
+  align-items: center;
+}
+
+#branch-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#support-nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#page-nav-list,
+#support-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page-nav-list li {
+  padding-inline: 0.5rem;
+}
+
+#support-nav-list li {
+  padding-inline-start: 0.5rem;
+}
