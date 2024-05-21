@@ -8,13 +8,29 @@
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-  font-size: calc(1rem + 0.5dvw);
+
+  --bg-primary: #FFF;
+  --bg-secondary: #FFF3E3;
+  --tx-primary: #333333;
+  --tx-secondary: #B88E2F;
+  --tx-light: #666666;
+  --tx-highlight: #FFF;
+  --bg-warning: #E97171;
+  --bg-accept: #2EC1AC;
+
+
+
+  font-size: calc(1rem + 0.25dvw);
 }
 
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overscroll-behavior: contain;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -40,7 +56,11 @@ header {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   align-items: center;
-  margin-inline: 3rem;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 #page-logo {
@@ -114,9 +134,37 @@ header {
 
 #hero {
   width: 100%;
+  padding-inline: 1rem;
+  background-image: url("../image/Background/scandinavian-interior-mockup-wall-decal-background 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
-#hero-background {
-  width: 100%;
-  user-select: none;
+#hero-inform-box {
+  width: 50%;
+  padding: 2rem 2rem;
+  background-color: var(--bg-secondary);
+}
+
+#hero-box-heading-2 {
+  text-transform: capitalize;
+  font-weight: var(--fw-semibold);
+  color: var(--tx-primary);
+  letter-spacing: 2px;
+}
+
+#hero-box-heading-1 {
+  font-weight: var(--fw-bold);
+  color: var(--tx-secondary);
+  font-size: 4em;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+#hero-box-description {
+  color: var(--tx-primary);
 }
