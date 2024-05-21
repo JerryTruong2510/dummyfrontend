@@ -8,13 +8,29 @@
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-  font-size: calc(1rem + 0.5dvw);
+
+  --bg-primary: #FFF;
+  --bg-secondary: #FFF3E3;
+  --tx-primary: #333333;
+  --tx-secondary: #B88E2F;
+  --tx-light: #666666;
+  --tx-highlight: #FFF;
+  --bg-warning: #E97171;
+  --bg-accept: #2EC1AC;
+
+
+
+  font-size: calc(1rem + 0.25dvw);
 }
 
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overscroll-behavior: contain;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -40,7 +56,11 @@ header {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   align-items: center;
-  margin-inline: 3rem;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 #page-logo {
@@ -110,13 +130,4 @@ header {
 #page-nav-list li a:hover,
 #support-nav-list li a:hover {
   font-weight: var(--fw-bold);
-}
-
-#hero {
-  width: 100%;
-}
-
-#hero-background {
-  width: 100%;
-  user-select: none;
 }
