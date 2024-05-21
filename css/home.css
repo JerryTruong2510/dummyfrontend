@@ -27,10 +27,21 @@
   font-weight: var(--fw-bold);
   color: var(--tx-secondary);
   font-size: 4em;
-  line-height: 1.25em;
+  line-height: 1.5em;
   margin: 0;
 }
 
 #hero-box-description {
   color: var(--tx-primary);
+  margin: 0;
+  margin-block-end: 2rem;
+}
+
+#hero-buy-now-button {
+  width: 13rem;
+  height: 4rem;
+  font-weight: var(--fw-bold);
+  color: var(--tx-tertiary);
+  background-color: var(--bg-tertiary);
+  cursor: pointer;
 }
