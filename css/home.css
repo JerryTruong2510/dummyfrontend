@@ -1,7 +1,7 @@
 #hero {
-  width: 100vw;
+  width: 100%;
+  padding-inline: 1rem;
   margin-top: 15vh;
-  padding-inline: 1rem; /*padding left and right*/
   background-image: url("../image/Background/scandinavian-interior-mockup-wall-decal-background 1.png");
   background-size: cover;
   background-repeat: no-repeat;
